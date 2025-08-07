@@ -5,18 +5,32 @@ import { FaClock, FaMapMarkerAlt, FaUser } from "react-icons/fa";
 const Card = styled.div`
   border: 1px solid #000;
   border-radius: 8px;
-  margin: 10px;
+  width: 500px;
+  margin: auto;
 `;
 
 const Title = styled.h2`
   text-align: center;
+  color: rgba(255, 47, 0, 0.79);
+  font-size: 25px;
 `;
 
 const EventList = styled.ul`
   display: flex;
+  justify-content: center;
+    gap: 16px;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
 `;
+
 const ListItem = styled.li`
   list-style: none;
+  padding: 24px 32px;
+  margin: 0;
+  border-radius: 8px;
+  background: #fff;
+
 `;
 
 function Event({ name, start, end, location, speaker }) {
